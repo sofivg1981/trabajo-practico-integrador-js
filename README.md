@@ -1,2 +1,2 @@
-# trabajo-practico-integrador-js
-Trabajo pr´ctico integrador para codo a codo.
+Trabajo Practico integrador realizado solo con Bootstrap
+Sofia van Gelderen para Front-End Codo a codo.

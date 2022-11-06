@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Trabajo Práctico Integrador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+
+    <body>
+      <header> 
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="./img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-auto">
+                        Conf Bs As
+                      </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="d-flex justify-content-end">
+                    <div class="collapse navbar-collapse" id="navbarText">
+                      <div class="navbaritems">  
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html#Laconferencia">La conferencia</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./index.html#Conocealosoradores">Los oradores</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./index.html#Lugaryfecha">El lugar y la fecha</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./index.html#convierteteenunorador">Conviertete en orador</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link text-success" href="./Comprar-tickets.html">Comprar tickets</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav> 
+      
+      </header>
+            <!--Categorias-->
+            <section id="comprartickets">
+              <div class="d-flex justify-content-center text-center">
+                <div class="d-flex flex-row mb-3 justify-content">
+                <span class="border border-primary p-3 m-1 mt-4">
+                  <h4><b>Estudiante</b></h4>
+                  <h5>Tienen un descuento</h5>
+                  <h5>80%</h5>
+                  <p>*presentar documentación</p>
+      
+      
+      
+                </span>
+                <span class="border border-info p-3 m-1 mt-4">
+                  <h4><b>Trainee</b></h4>
+                  <h5>Tienen un descuento</h5>
+                  <h5>50%</h5>
+                  <p>*presentar documentación</p>
+      
+                </span>
+                <span class="border border-warning p-3 m-1 mt-4">
+                  <h4><b>Junior</b></h4>
+                  <h5>Tienen un descuento</h5>
+                  <h5>15%</h5>
+                  <p>*presentar documentación</p>
+      
+                </span>
+              </div>
+            </div>
+          </section>
+
+                     
+          <!--ventas-->
+      <section>
+        <div class="text-center">
+          <p>VENTA</p>
+          <h3>VALOR DE TICKET $200</h3>
+        </div>
+        <form class="d-flex flex-column">
+          <div class="d-flex flex-row mb-0 justify-content-center">
+            <div class="col-3 pe-1">
+              <input type="text" id="Nombre" class="form-control"  placeholder="Nombre" aria-label="Nombre">
+            </div>
+  
+            <div class="col-3 ps-1" >
+              <input type="text" id="Apellido" class="form-control"  placeholder="Apellido" aria-label="Apellido">
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="col-3 pe-1">
+              <p id="validarnombre" class="text-danger"> </p>
+            </div>
+            <div class="col-3 ps-1" >
+              <p id="validarapellido" class="text-danger"> </p>
+            </div>
+          </div>                     
+          <div class="d-flex flex-row mb-0 justify-content-center">
+            <div class="col-6">
+              <input type="email" id="email" class="form-control" placeholder="Correo">
+            </div>
+          </div>
+          <div class="d-flex flex-row m-0 justify-content-center">
+            <div class="col-6">
+              <p id="validaremail" class="text-danger"> </p>
+            </div>
+          </div>
+          <div class="d-flex flex-row mb-3 justify-content-center">
+            <div class="col-3 pe-1">
+              <label class="form-label d-flex justify-content-left ps-2">Cantidad</label>
+              <input type="number" id="amount" class="form-control"  placeholder="Cantidad" aria-label="Cantidad" value="1" min="1">
+            </div>
+            <div class="col-3 ps-1">
+              <label  class="form-label d-flex justify-content-left ps-2">Categoría</label>
+              <select class="form-select" id="Categoría">
+                  <option value="0" selected>Seleccione su categoría</option>
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                  <option value="4">Público General</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex flex-row mb-3 justify-content-center">
+            <div class="col-6">
+              <input id="total" class="form-control bg-primary p-2 text-primary" type="text" value="Total a pagar:$" style="--bs-bg-opacity: .2;" aria-label="readonly input example" readonly>
+            </div>
+          </div>
+          <div class="d-flex flex-row mb-3 justify-content-center">
+            <div class="d-grid col-3">
+              <button class="btn btn-primary pe-2" id="borrar" type="button"style="background-color:rgba(150,201,62,255); border-color: rgba(150,201,62,255);">Borrar</button>
+            </div>
+            <div class="d-grid col-3 ps-2">
+              <button class="btn btn-primary" id="resumen" type="button" style="background-color:rgba(150,201,62,255); border-color: rgba(150,201,62,255);">Resumen</button>
+            </div>
+          </div>
+        </div>
+        </form>
+      </section>
+      <br>
+      <footer>
+        <nav class="navbar" style="background-color:rgba(28,63,82,255); height: 100px;">
+          <div class="container">
+            <a href="" class="text-decoration-none text-white">Preguntas frecuentes</a>
+            <a href="" class="text-decoration-none text-white">Contáctanos</a>
+            <a href="" class="text-decoration-none text-white">Prensa</a>
+            <a href="" class="text-decoration-none text-white">Conferencias</a>
+            <a href="" class="text-decoration-none text-white">Términos y condiciones</a>
+            <a href="" class="text-decoration-none text-white">Privacidad</a>
+            <a href="" class="text-decoration-none text-white">Estudiantes</a>
+          </div>
+        </nav>
+        </div>
+      </footer>
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="./scripts.js"></script>
+    </body>
+
+</html>
