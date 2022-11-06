@@ -83,35 +83,6 @@ function TotalAPagar() {
     }
 }
 
-function BorrarTotalAPagar() {
-    if(Categoria.value>=1){
-            document.getElementById("total").value = "Total a pagar:$";
-    }
-
-}
-
-function BorrarCantidad() {
-    if(cantidad.value>=2){
-            document.getElementById("amount").value = 1;
-    }
-
-}
-
-function BorrarCategoria() {
-    if(Categoria.value>=1){
-            document.getElementById("Categoría").value = 0;
-    }
-
-}
-
-botonBorrar.addEventListener("click", BorrarTotalAPagar);
-
-botonBorrar.addEventListener("click", BorrarCantidad);
-
-botonBorrar.addEventListener("click", BorrarCategoria);
-
-
-
 botonResumen.addEventListener("click", validarnombre);
 
 botonResumen.addEventListener("click", validarapellido);
